@@ -12,10 +12,9 @@ jobs:
       - name: Install renovate-config-validator with npm
         run: npm i -g renovate
       - run: renovate --version
-      - run: diff .renovaterc foo/renovate.json
+      - run: mv .renovaterc renovate.json
       - name: renovate.json is OK
         run: renovate-config-validator
-        env:
-          RENOVATE_CONFIG_FILE: foo/renovate/json
+      - run: mv renovate.json .renovaterc
       - name: renovate-config-validator doesn't work with .renovaterc 
         run: renovate-config-validator
