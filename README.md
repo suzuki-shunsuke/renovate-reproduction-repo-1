@@ -2,6 +2,8 @@
 
 This is a repository to reproduce the issue of `renovate-config-validator`.
 
+https://github.com/renovatebot/renovate/discussions/22990
+
 Please check the GitHub Actions log.
 
 https://github.com/suzuki-shunsuke/renovate-reproduction-repo-1/actions/runs/5383306525/jobs/9769886633
